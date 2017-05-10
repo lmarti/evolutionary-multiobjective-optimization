@@ -1,7 +1,7 @@
 numpy
 scikit-learn
 scipy
-theano
+seaborn
 ipywidgets
 matplotlib
 pandas
