@@ -5,3 +5,4 @@ theano
 ipywidgets
 matplotlib
 pandas
+deap -e git+https://github.com/DEAP/deap@master
