@@ -1,0 +1,30 @@
+digraph Deep_Learning {
+    graph [fontname="Optima",size="10,10"];
+    node [fontname="Optima", shape=egg, nodesep=0.15, fontcolor=black, color=gray, fillcolor=lightgray, style=filled, fontsize=11];
+    edge [fontname=Helvetica, fontcolor=red, fontsize=10,splines=curved];
+    rankdir = LR;
+
+    Population -> Copula;
+    Copula -> cop_sampling;
+    cop_sampling -> union;
+    Population -> OCD;
+    OCD -> restart;
+    restart -> Population;
+    Copula -> precursors;
+    precursors -> new_pop;
+    Population -> union;
+//    offspring -> union;
+    union -> selection;
+    selection -> new_pop;
+
+    Population [fillcolor=lightcoral];
+    Copula [label="Estimate copula\nparameters",fillcolor=lightpink];
+    cop_sampling [label="Sample\ncopula",fillcolor=lightpink];
+    OCD [fillcolor=lightgreen];
+    precursors [label="Precursor\nsampling",fillcolor=cornflowerblue];
+    restart [label="Restart\nindividuals",fillcolor=lightgreen];
+//    offspring [label="Offspring\npopulation",fillcolor=deepskyblue];
+    union [label="+",shape=circle,fontsize=15,fillcolor=lightskyblue];
+    selection [label="SMS\nselection",fillcolor=lightskyblue];
+    new_pop [label="New\n population",fillcolor=lightblue];
+ }
