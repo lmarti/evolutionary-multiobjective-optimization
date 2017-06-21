@@ -7,6 +7,7 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 A [Jupyter](https://www.jupyter.org)/[IPython](https://www.ipython.org) notebook tutorial on evolutionary multi-objective optimization.
+
 *Notes:* 
 * Coded in Python 3.x. Python 2.x is not supported.
 * See [`requirements.txt`](https://github.com/lmarti/evolutionary-multiobjective-optimization/blob/master/requirements.txt) for a full list of requirements. 
